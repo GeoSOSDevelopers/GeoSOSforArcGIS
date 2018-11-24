@@ -1,4 +1,4 @@
-# GeoSOSforArcGIS
+# GeoSOS for ArcGIS
 This is GeoSOS for ArcGIS Add-In Source Code Repository.
 Geographical Simulation and Optimization System (GeoSOS) theory is proposed by Pro. Xia Li (lixia@mail.sysu.edu.cn) at Sun Yat-sen University.
 This software Add-In is developed by Dr. Dan Li (danl_163@163.com).
