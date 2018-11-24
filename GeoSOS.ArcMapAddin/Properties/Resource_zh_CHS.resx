@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>人工神经网络元胞自动机模拟设置向导</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>还未选择完成图层的土地利用类型</value>
+  </data>
+  <data name="String100" xml:space="preserve">
+    <value>进行基于逻辑回归的CA模拟设置如下：</value>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value>开始时间为：</value>
+  </data>
+  <data name="String102" xml:space="preserve">
+    <value>人工神经网络CA模拟，</value>
+  </data>
+  <data name="String103" xml:space="preserve">
+    <value>决策树CA模拟，</value>
+  </data>
+  <data name="String104" xml:space="preserve">
+    <value>逻辑回归CA模拟，</value>
+  </data>
+  <data name="String105" xml:space="preserve">
+    <value>模拟精度</value>
+  </data>
+  <data name="String106" xml:space="preserve">
+    <value>   该向导将引导您进行基于人工神经网络方法的元胞自动机模拟。</value>
+  </data>
+  <data name="String107" xml:space="preserve">
+    <value>人工神经网络元胞自动机介绍</value>
+  </data>
+  <data name="String108" xml:space="preserve">
+    <value>  了解基于人工神经网络算法元胞自动机的基本原理。</value>
+  </data>
+  <data name="String109" xml:space="preserve">
+    <value>空间变量图层名称</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>正在抽样.....</value>
+  </data>
+  <data name="String110" xml:space="preserve">
+    <value>土地利用类型值</value>
+  </data>
+  <data name="String111" xml:space="preserve">
+    <value>土地利用类型说明</value>
+  </data>
+  <data name="String112" xml:space="preserve">
+    <value>是否是城市用地</value>
+  </data>
+  <data name="String113" xml:space="preserve">
+    <value>使用颜色</value>
+  </data>
+  <data name="String114" xml:space="preserve">
+    <value>训练数据设置</value>
+  </data>
+  <data name="String115" xml:space="preserve">
+    <value> 设置训练人工神经网络将使用的空间数据。</value>
+  </data>
+  <data name="String116" xml:space="preserve">
+    <value>抽样数据</value>
+  </data>
+  <data name="String117" xml:space="preserve">
+    <value> 获取人工神经网络的抽样数据。</value>
+  </data>
+  <data name="String118" xml:space="preserve">
+    <value>人工神经网络训练</value>
+  </data>
+  <data name="String119" xml:space="preserve">
+    <value> 训练人工神经网络进行土地利用类型的预测。</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>正在读取初始时刻影像</value>
+  </data>
+  <data name="String120" xml:space="preserve">
+    <value>模拟数据设置</value>
+  </data>
+  <data name="String121" xml:space="preserve">
+    <value> 设置模拟要使用的数据。</value>
+  </data>
+  <data name="String122" xml:space="preserve">
+    <value>模拟参数设定</value>
+  </data>
+  <data name="String123" xml:space="preserve">
+    <value> 设置模拟所需的各类参数。</value>
+  </data>
+  <data name="String124" xml:space="preserve">
+    <value>模拟过程参数设置</value>
+  </data>
+  <data name="String125" xml:space="preserve">
+    <value> 设置模拟过程中的配置。</value>
+  </data>
+  <data name="String126" xml:space="preserve">
+    <value>模拟设置完成</value>
+  </data>
+  <data name="String127" xml:space="preserve">
+    <value> 检查以下摘要信息。单击“完成”以进行模拟。</value>
+  </data>
+  <data name="String128" xml:space="preserve">
+    <value>土地利用类型性质</value>
+  </data>
+  <data name="String129" xml:space="preserve">
+    <value>变量名称</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>正在读取终止时刻影像</value>
+  </data>
+  <data name="String130" xml:space="preserve">
+    <value>系数值</value>
+  </data>
+  <data name="String131" xml:space="preserve">
+    <value>标准差</value>
+  </data>
+  <data name="String132" xml:space="preserve">
+    <value>95%置信区间上限</value>
+  </data>
+  <data name="String133" xml:space="preserve">
+    <value>95%置信区间下限</value>
+  </data>
+  <data name="String134" xml:space="preserve">
+    <value>逻辑回归元胞自动机模拟设置向导</value>
+  </data>
+  <data name="String135" xml:space="preserve">
+    <value> 该向导将引导您进行基于逻辑回归方法的元胞自动机模拟。</value>
+  </data>
+  <data name="String136" xml:space="preserve">
+    <value>逻辑回归元胞自动机介绍</value>
+  </data>
+  <data name="String137" xml:space="preserve">
+    <value> 了解基于逻辑回归算法元胞自动机的基本原理。</value>
+  </data>
+  <data name="String138" xml:space="preserve">
+    <value> 设置逻辑回归分析将使用的空间数据。</value>
+  </data>
+  <data name="String139" xml:space="preserve">
+    <value>配置土地利用类型</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>正在读取变量影像</value>
+  </data>
+  <data name="String140" xml:space="preserve">
+    <value> 设置每一种土地利用类型的值、名称、性质和颜色。</value>
+  </data>
+  <data name="String141" xml:space="preserve">
+    <value>逻辑回归分析</value>
+  </data>
+  <data name="String142" xml:space="preserve">
+    <value> 计算各变量的回归系数。</value>
+  </data>
+  <data name="String143" xml:space="preserve">
+    <value>决策树元胞自动机模拟设置向导</value>
+  </data>
+  <data name="String144" xml:space="preserve">
+    <value>该向导将引导您进行基于决策树方法的元胞自动机模拟。</value>
+  </data>
+  <data name="String145" xml:space="preserve">
+    <value>决策树元胞自动机介绍</value>
+  </data>
+  <data name="String146" xml:space="preserve">
+    <value> 了解基于决策树算法元胞自动机的基本原理。</value>
+  </data>
+  <data name="String147" xml:space="preserve">
+    <value> 设置训练决策树将使用的空间数据。</value>
+  </data>
+  <data name="String148" xml:space="preserve">
+    <value>生成决策树</value>
+  </data>
+  <data name="String149" xml:space="preserve">
+    <value> 构建包含所有土地利用转换规则的决策树。</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>截距</value>
+  </data>
+  <data name="String150" xml:space="preserve">
+    <value>栅格数量总计</value>
+  </data>
+  <data name="String151" xml:space="preserve">
+    <value>土地开发强度(%)</value>
+  </data>
+  <data name="String152" xml:space="preserve">
+    <value>城乡建设用地增长率(%)</value>
+  </data>
+  <data name="String153" xml:space="preserve">
+    <value>请选择土地利用分类数据进行统计。</value>
+  </data>
+  <data name="String154" xml:space="preserve">
+    <value>保存为Excel文件</value>
+  </data>
+  <data name="String155" xml:space="preserve">
+    <value>Excel文件已保存。</value>
+  </data>
+  <data name="String156" xml:space="preserve">
+    <value>说明：进行同一区域两个时段土地利用分类数据对比，可得到混淆矩阵及Kappa值。</value>
+  </data>
+  <data name="String157" xml:space="preserve">
+    <value>起始时期土地利用分类数据：</value>
+  </data>
+  <data name="String158" xml:space="preserve">
+    <value>终止时期土地利用分类数据：</value>
+  </data>
+  <data name="String159" xml:space="preserve">
+    <value>模拟结果数据：</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>请选择需要模拟的开始时刻土地利用分类影像。</value>
+  </data>
+  <data name="String160" xml:space="preserve">
+    <value>说明：进行模拟结果与真实土地利用分类数据对比，可得到混淆矩阵、Kappa值和各类精度值。</value>
+  </data>
+  <data name="String161" xml:space="preserve">
+    <value>模拟终止时刻真实土地利用分类数据：</value>
+  </data>
+  <data name="String162" xml:space="preserve">
+    <value>说明：进行模拟起始时刻、终止时刻真实土地利用分类数据与模拟结果对比，可得到基于FoM的各类结果值。</value>
+  </data>
+  <data name="String163" xml:space="preserve">
+    <value>已加载默认目标函数和蚁群算法参数，请点击工具条上的“开始”按钮执行优化过程。</value>
+  </data>
+  <data name="String164" xml:space="preserve">
+    <value>执行基于蚁群算法的面优化问题求解，请使用面优化面板进行设置。</value>
+  </data>
+  <data name="String165" xml:space="preserve">
+    <value>未打开示例的Mxd文档。请打开AddIn安装目录中示例数据目录下的Optimization_DongGuang.mxd文件。</value>
+  </data>
+  <data name="String166" xml:space="preserve">
+    <value>面优化效用函数设置或蚁群算法参数设置未完成。请在设置窗体中完成设置。</value>
+  </data>
+  <data name="String167" xml:space="preserve">
+    <value>基于蚁群算法的面优化，</value>
+  </data>
+  <data name="String168" xml:space="preserve">
+    <value>还未选择需要执行的模拟或优化方法，请点击工具条上的模拟或优化方法执行相应过程。</value>
+  </data>
+  <data name="String169" xml:space="preserve">
+    <value>正在创建生态适宜性数据</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>未打开示例的Mxd文档。请打开AddIn安装目录中示例数据目录下的LandUseChange_DongGuan.mxd文件。</value>
+  </data>
+  <data name="String170" xml:space="preserve">
+    <value>已经完成面优化过程。效用函数的最大值为：</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>进行基于决策树的CA模拟设置如下：</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>涉及的空间变量的回归系数：</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>常数</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value> 系数为：</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>本次模拟的转换总量为：</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value> 个栅格单元。</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value> 次。</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>每次迭代的转换量为：</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>扩散系数：</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>城市用地类型的对应值为：</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value> 数值为：</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>可以转换为城市用地类型的对应值为：</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>还未选择提取规则时要使用的初始土地利用分类影像。请选择初始土地利用分类影像。</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>不可以转换为城市用地类型的对应值为：</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>模拟要迭代的次数为：</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>模拟过程控制：</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>每 </value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value> 次迭代刷新一次输出结果和图表。</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value> 次迭代输出一次中间结果图像。</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>输出位置：</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>正在创建模拟结果影像</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>已完成CA模拟设置。点击GeoSOS工具栏中的开始按钮可以开始模拟过程。</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>当前正在运行模拟，请先停止当前模拟再重新进行模拟。</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>还未选择提取规则时要使用的终止土地利用分类影像。请选择终止土地利用分类影像。</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>土地利用类型用地量变化</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>迭代次数</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>用地量</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>开始模拟过程:</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>数据空值</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>当前迭代次数：第 </value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value> 次</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>当前城市单元的数量：</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>完成模拟过程。</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>本次模拟用时：</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>还未选择模拟的空间变量影像。请选择空间变量影像。</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value> 秒。</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>转换结果</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>XML文件(*.xml)|*.xml</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>打开土地利用类型信息配置文件</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>保存土地利用类型信息配置文件</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>已保存配置文件。</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>CA模拟-逻辑回归方法</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>功能正在实现中。</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>读取数据：</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>当前过程已暂停</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>可转换为城市用地</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>当前过程已继续执行</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>当前过程已停止</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>请打开AddIn安装目录下Help目录中的GeoSOS for ArcGIS User Manual_CHS.pdf文件。或访问http://www.geosimulation.cn/usermanual_arcgisaddin.html获取帮助。</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>正在生成决策树，需要一定时间，请耐心等待.....</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>抽样数据共有 </value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value> 条。 </value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>请勾选某种土地利用类型为城市用地类型</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>还未完成人工神经网络训练。请点击“开始训练”按钮进行训练。</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>已完成抽样!</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>人工神经网络已完成训练</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>不可转换为城市用地</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>打开转换适宜性设置文件</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>保存转换适宜性设置文件</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>进行基于人工神经网络的CA模拟设置如下：</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>空间影响因子图层为：</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>土地利用类型包括：</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>邻域窗口大小为：</value>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>模拟起始的土地利用数据：</value>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>模拟终止进行对比的土地利用数据：</value>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>转换阈值为：</value>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>土地利用类型相互转变的适宜性为：</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>城市用地</value>
+  </data>
+  <data name="String80" xml:space="preserve">
+    <value>CA模拟-人工神经网络方法</value>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>CA模拟-决策树方法</value>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>本次模拟的精度：</value>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>模拟结果的混淆矩阵为：</value>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>模拟的总精度：</value>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>Kappa系数：</value>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>FoM精度值：</value>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>生产者精度值：</value>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>用户精度值：</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>正在计算.....</value>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>整体</value>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>栅格数量</value>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>百分比</value>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>决策树生成完成!</value>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>指标名称</value>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>指标值</value>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>决策树精度</value>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Kappa系数</value>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>训练集记录比例</value>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>训练集记录数</value>
+  </data>
+</root>

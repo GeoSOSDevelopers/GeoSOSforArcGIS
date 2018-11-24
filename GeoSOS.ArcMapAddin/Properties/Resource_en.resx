@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>Configuration Wizard of ANN-CA</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Please select proper land use character for all land use types</value>
+  </data>
+  <data name="String100" xml:space="preserve">
+    <value>All configurations for Logistic-CA are listed below: </value>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value> simulation, Start Time: </value>
+  </data>
+  <data name="String102" xml:space="preserve">
+    <value>ANN-CA</value>
+  </data>
+  <data name="String103" xml:space="preserve">
+    <value>DecisionTree-CA</value>
+  </data>
+  <data name="String104" xml:space="preserve">
+    <value>Logistic-CA</value>
+  </data>
+  <data name="String105" xml:space="preserve">
+    <value>Accuracy</value>
+  </data>
+  <data name="String106" xml:space="preserve">
+    <value>   This wizard will guide you to finish the configurations for ANN-CA simulations.</value>
+  </data>
+  <data name="String107" xml:space="preserve">
+    <value>Induction of ANN-CA</value>
+  </data>
+  <data name="String108" xml:space="preserve">
+    <value>   Induction of the theory on artifical neural network based CA.</value>
+  </data>
+  <data name="String109" xml:space="preserve">
+    <value>Spatial Variables Layer Name</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Sampling.....</value>
+  </data>
+  <data name="String110" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="String111" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="String112" xml:space="preserve">
+    <value>Is Urban</value>
+  </data>
+  <data name="String113" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="String114" xml:space="preserve">
+    <value>Training Data Configuration</value>
+  </data>
+  <data name="String115" xml:space="preserve">
+    <value>  Set the land use data, spatial variables and other configurations for ANN training.</value>
+  </data>
+  <data name="String116" xml:space="preserve">
+    <value>Training Data Sampling</value>
+  </data>
+  <data name="String117" xml:space="preserve">
+    <value>  Sample the data for training, and set the land use types info.</value>
+  </data>
+  <data name="String118" xml:space="preserve">
+    <value>Artificial Neural Network Training</value>
+  </data>
+  <data name="String119" xml:space="preserve">
+    <value>  Train the ANN for calculating conversion probabilities of all land use types by input data.</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Reading initial land use data </value>
+  </data>
+  <data name="String120" xml:space="preserve">
+    <value>Simulation/Prediction Data Configuration</value>
+  </data>
+  <data name="String121" xml:space="preserve">
+    <value>  Set land use data, number of cells need to be converted, iterations for a simulation/prediction.</value>
+  </data>
+  <data name="String122" xml:space="preserve">
+    <value>Simulation/Prediction Parameters Configuration</value>
+  </data>
+  <data name="String123" xml:space="preserve">
+    <value>  Set all parameters for a simulation/prediction.</value>
+  </data>
+  <data name="String124" xml:space="preserve">
+    <value>Simulation/Prediction Process Configuration</value>
+  </data>
+  <data name="String125" xml:space="preserve">
+    <value>  Set the refresh and output configurations for a simulation/prediction.</value>
+  </data>
+  <data name="String126" xml:space="preserve">
+    <value>Configuration Finished</value>
+  </data>
+  <data name="String127" xml:space="preserve">
+    <value>  Check the summary below. Click “Finish” to start the simulation/prediction.</value>
+  </data>
+  <data name="String128" xml:space="preserve">
+    <value>Land use character</value>
+  </data>
+  <data name="String129" xml:space="preserve">
+    <value>Variables Name</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Reading ending land use data </value>
+  </data>
+  <data name="String130" xml:space="preserve">
+    <value>Coefficients</value>
+  </data>
+  <data name="String131" xml:space="preserve">
+    <value>Standard Errors</value>
+  </data>
+  <data name="String132" xml:space="preserve">
+    <value>95% Confidence Intervals Upper Bound</value>
+  </data>
+  <data name="String133" xml:space="preserve">
+    <value>95% Confidence Intervals Lower Bound</value>
+  </data>
+  <data name="String134" xml:space="preserve">
+    <value>Configuration Wizard of Logistic-CA</value>
+  </data>
+  <data name="String135" xml:space="preserve">
+    <value>   This wizard will guide you to finish the configurations for Logistic-CA simulations.</value>
+  </data>
+  <data name="String136" xml:space="preserve">
+    <value>Induction of Logistic-CA</value>
+  </data>
+  <data name="String137" xml:space="preserve">
+    <value>   Induction of the theory on logistic regression based CA.</value>
+  </data>
+  <data name="String138" xml:space="preserve">
+    <value>   Set the land use data, spatial variables and other configurations for logistic regression.</value>
+  </data>
+  <data name="String139" xml:space="preserve">
+    <value>Land Use Type Configuration</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Reading spatial variables: </value>
+  </data>
+  <data name="String140" xml:space="preserve">
+    <value>   Set value, description, character and color for all land use types.</value>
+  </data>
+  <data name="String141" xml:space="preserve">
+    <value>Logistic Regression Calclulation</value>
+  </data>
+  <data name="String142" xml:space="preserve">
+    <value>   Calculate regression coefficients for all variables.</value>
+  </data>
+  <data name="String143" xml:space="preserve">
+    <value>Configuration Wizard of DecisionTree-CA</value>
+  </data>
+  <data name="String144" xml:space="preserve">
+    <value>   This wizard will guide you to finish the configurations for DecisionTree-CA simulations.</value>
+  </data>
+  <data name="String145" xml:space="preserve">
+    <value>Induction of DecisionTree-CA</value>
+  </data>
+  <data name="String146" xml:space="preserve">
+    <value>   Induction of the theory on decision tree based CA.</value>
+  </data>
+  <data name="String147" xml:space="preserve">
+    <value>   Set the land use data, spatial variables and other configurations for generating decision tree.</value>
+  </data>
+  <data name="String148" xml:space="preserve">
+    <value>Generating Decision Tree</value>
+  </data>
+  <data name="String149" xml:space="preserve">
+    <value>  Generate decision tree to obtain all transition rules.</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Intercept</value>
+  </data>
+  <data name="String150" xml:space="preserve">
+    <value>Sum of all cells</value>
+  </data>
+  <data name="String151" xml:space="preserve">
+    <value>Land Development Intensity (%)</value>
+  </data>
+  <data name="String152" xml:space="preserve">
+    <value>Urban Growth Rate (%)</value>
+  </data>
+  <data name="String153" xml:space="preserve">
+    <value>Please select land use data to analyze.</value>
+  </data>
+  <data name="String154" xml:space="preserve">
+    <value>Save to Excel file</value>
+  </data>
+  <data name="String155" xml:space="preserve">
+    <value>Excel file has been saved.</value>
+  </data>
+  <data name="String156" xml:space="preserve">
+    <value>说明：进行同一区域两个时段土地利用分类数据对比，可得到混淆矩阵及Kappa值。</value>
+  </data>
+  <data name="String157" xml:space="preserve">
+    <value>起始时期土地利用分类数据：</value>
+  </data>
+  <data name="String158" xml:space="preserve">
+    <value>终止时期土地利用分类数据：</value>
+  </data>
+  <data name="String159" xml:space="preserve">
+    <value>模拟结果数据：</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Please select initail land use data for simulation/prediction.</value>
+  </data>
+  <data name="String160" xml:space="preserve">
+    <value>说明：进行模拟结果与真实土地利用分类数据对比，可得到混淆矩阵、Kappa值和各类精度值。</value>
+  </data>
+  <data name="String161" xml:space="preserve">
+    <value>模拟终止时刻真实土地利用分类数据：</value>
+  </data>
+  <data name="String162" xml:space="preserve">
+    <value>说明：进行模拟起始时刻、终止时刻真实土地利用分类数据与模拟结果对比，可得到基于FoM的各类结果值。</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Please open the tutorial Mxd File - "LandUseChange_DongGuan.mxd”, located in: software decompression folder &amp; “\Tutorial Data\TutorialData_DongGuan_80m”.</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>All configurations for DecisionTree-CA are listed below: </value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Regression coefficients of all spatial variables are: </value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Prompt</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Constant</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>  Coefficient: </value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>Number of cells that are expected to convert: </value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>  cells.</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>  iterations.</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>Converted cells in one iteration: </value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>Stochastic Disturbance Coefficient : </value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>Land use type name and value of urban: </value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>  Value: </value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>Land use type values that can be converted to urban: </value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Confusion Matrix of Simulated Data and Validation Data: </value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>Land use type values that can't be converted to urban: </value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Number of iterations: </value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Configurations of refresh and output: </value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>Every </value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>  iterations map, output info and graph will be refreshed.</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>  iterations the intermediate data will be outputted.</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Output folder path: </value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Creating simulated land use data </value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Configuration for CA simulation is finished. Please click “Start” button in GeoSOS toolbar to start the simulation process.</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>A simulation process is running, please stop it then restart a new simulation process.</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Please select a land use data of end time for mining the land use transition rules.</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Land Use Amount</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>Intertions</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>Start Simulation Process: </value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Null Value</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Iteration: </value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>Amount of Urban Cells: </value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Finish Simulation Process.</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Time Elasped of Current Simulation: </value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Please select spatial variables.</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>  seconds.</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>Conversion result</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>XML file(*.xml)|*.xml</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>Open land use type config file</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>Save land use type config file</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>Config file is saved.</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>CA Simulation - Logistic Regression Algorithm</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>Reading Simulation Data: </value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>Current Simulation Process is Paused</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Can be converted to urban</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>Current Simulation Process is Proceeding</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>Current Simulation Process is Stopped</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>Please open “GeoSOS for ArcGIS User Manual.pdf” in “User Manual” folder under the software decompression folder. Or get help at http://www.geosimulation.cn/usermanual_arcgisaddin.html .</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>Generating tree, it'll take a while, please be patient…..</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>Number of sampled records is </value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>  .</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>Please chose at least one land use type as urban land use.</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>ANN training is not finished. Please click “Start” button to begin the training procedure.</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Sampling Completed!</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>Training Completed</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Cann't be converted to urban</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>Open conversion suitability configuration file</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>Save conversion suitability configuration file</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>All configurations for ANN-CA are listed below: </value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>Spatial variables layers are: </value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>All land use names and values are: </value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>Neighbor window size: </value>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>Land use data of initial time: </value>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>Land use data for validation: </value>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>Conversion threshold: </value>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>Land use conversion suitability matrix: </value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Urban</value>
+  </data>
+  <data name="String80" xml:space="preserve">
+    <value>CA Simulation - Artificial Neural Network Algorithm</value>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>CA Simulation - Decision Tree Algorithm</value>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>Start </value>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>Accuracy of Current Simulation：</value>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>Confusion Matrix of Simulated Data and Validation Data：</value>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>Overall Accuracy：</value>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>Kappa Value：</value>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>FoM Value：</value>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>Producer Accuracy：</value>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>User Accuracy：</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Calculating ...</value>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>Overall</value>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>Percent</value>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>Desicion Tree is generated!</value>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>Indicators</value>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>Accuracy of decision tree</value>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Kappa</value>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>Scale of training data set in all data</value>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>Number of records in training data set</value>
+  </data>
+</root>

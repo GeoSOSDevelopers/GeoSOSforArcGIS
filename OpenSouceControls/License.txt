@@ -1,0 +1,11 @@
+﻿This Addin used some open source .Net controls.
+
+1. Accord.NET uses a GNU Lesser General Public License (https://github.com/accord-net/framework/blob/development/License.txt).
+	website: http://accord-framework.net/
+	
+2. Cristi Potlog's Wizard Control uses a MIT license (https://opensource.org/licenses/MIT).
+	website: http://www.codeproject.com/Articles/10808/Cristi-Potlog-s-Wizard-Control-for-NET
+
+3. ZedGraph uses a LGPL license (https://www.gnu.org/licenses/lgpl-3.0.en.html).
+	website: https://sourceforge.net/projects/zedgraph/
+	

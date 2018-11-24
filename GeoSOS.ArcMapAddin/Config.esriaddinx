@@ -1,0 +1,74 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>GeoSOS for ArcGIS</Name>
+  <AddInID>{ea3e103b-fc5c-4eeb-bf28-d7e59875f0ba}</AddInID>
+  <Description>This is an ArcMap Add-In provides GeoSOS CA (Cellular Automata) simulation functions and area optimization function.</Description>
+  <Version>2.0.0a</Version>
+  <Image>Images\GeoSOS ArcMapAddIn.png</Image>
+  <Author>Dr. Dan Li, Prof. Xia Li</Author>
+  <Company>Prof. Xia Li</Company>
+  <Date>2016/10/4</Date>
+  <Targets>
+    <Target name="Desktop" version="10.1" />
+  </Targets>
+  <AddIn language="CLR" library="GeoSOS.ArcMapAddIn.dll" namespace="GeoSOS.ArcMapAddIn">
+    <ArcMap>
+      <Toolbars>
+        <Toolbar id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_Toolbar" caption="GeoSOS for ArcGIS" showInitially="true">
+          <Items>
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonANNCA" />
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonDTCA" />
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonLogisticCA" />
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonAreaOptimization" separator="true" />
+
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonStart" separator="true" />
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonPause" />
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonStop" />
+            <!--<Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonReStart" />-->
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonSimulationConfiguration" />
+
+            <!--<Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonImagesCompare" separator="true" />
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonLanduseHistoricalTrends" />-->
+            
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonOutputWindow" separator="true" />
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonGraphyWindow" />
+            
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonUserManual" />
+            <Button refID="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonAbout" />
+          </Items>          
+        </Toolbar>
+      </Toolbars>
+      <Commands>        
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonANNCA" class="ButtonANNCA" message="Set ANN-CA Simulation Configurations." caption="ANN-CA" tip="ANN-CA Simulator" category="GeoSOS V2.0.0" image="Images\ButtonANNCA.png" />
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonDTCA" class="ButtonDTCA" message="Set DT-CA Simulation Configurations." caption="DT-CA" tip="DT-CA Simulator" category="GeoSOS V2.0.0" image="Images\ButtonDTCA.png" />
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonLogisticCA" class="ButtonLogisticCA" message="Set Logistc-CA Simulation Configurations." caption="Logistic-CA" tip="Logistic-CA Simulator" category="GeoSOS V2.0.0" image="Images\ButtonLogisticCA.png" />
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonAreaOptimization" class="ButtonAreaOptimization" message="Set Area Optimization Configurations." caption="Area Optimization" tip="Area Optimizer" category="GeoSOS V2.0.0" image="Images\DockableAreaOptimization.png" />
+        
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonStart" class="ButtonStart" message="Execute Simution/Optimization Process." caption="StartSimulation" tip="Start Simulation/Optimization" category="GeoSOS V2.0.0" image="Images\ButtonStart.png" />
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonPause" class="ButtonPause" message="Pause Simution/Optimization Process." caption="PauseSimulation" tip="Pause Simulation/Optimization" category="GeoSOS V2.0.0" image="Images\ButtonPause.png" />
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonStop" class="ButtonStop" message="Stop Simution/Optimization Process." caption="StopSimulation" tip="Stop Simulation/Optimization" category="GeoSOS V2.0.0" image="Images\ButtonStop.png" />
+        <!--<Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonReStart" class="ButtonReStart" message="ReStart Simution Process." caption="ReStartSimulation" tip="ReStart Simulation" category="GeoSOS V2.0.0" image="Images\ButtonReStart.png" />-->
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonSimulationConfiguration" class="ButtonSimulationConfiguration" message="Show Simution Configurations." caption="SimulationConfiguration" tip="Simulation Configuration" category="GeoSOS V2.0.0" image="Images\ButtonSimulationConfiguration.png" />
+
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonLanduseHistoricalTrends" class="ButtonHistoricalTrends" message="Historical trends in land use change." caption="Historical Trends" tip="Historical Trends" category="GeoSOS V2.0.0" image="Images\ButtonHistoricalTrends.png" />
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonImagesCompare" class="ButtonImagesCompare" message="Images Comparative Analysis." caption="Images Compare" tip="Images Compare" category="GeoSOS V2.0.0" image="Images\ButtonImagesCompare.png" />
+        
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonOutputWindow" class="ButtonOutputWindow" message="Open the output window." caption="Output Window" tip="Output Window" category="GeoSOS V2.0.0" image="Images\ButtonOutputWindow.png" />
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonGraphyWindow" class="ButtonGraphyWindow" message="Open the graphy window." caption="Graphy Window" tip="Graphy Window" category="GeoSOS V2.0.0" image="Images\ButtonGraphyWindow.png" />
+        
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonUserManual" class="ButtonUserManual" message="Show the User Manual Information." caption="User Manual" tip="User Manual" category="GeoSOS V2.0.0" image="Images\ButtonManual.png" />
+        <Button id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_ButtonAbout" class="ButtonAbout" message="About GeoSOS for ArcGIS." caption="About" tip="About" category="GeoSOS V2.0.0" image="Images\ButtonAbout.png" />
+      </Commands>
+      <DockableWindows>
+        <DockableWindow id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_DockableWindowAreaOptimization" class="DockableWindowAreaOptimization+AddinImpl" caption="Area Optimization" image="Images\DockableAreaOptimization.png">
+          <InitialPlacement height="700" width="330" state="unpinned" position="right" />
+        </DockableWindow>
+        <DockableWindow id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_DockableWindowOutput" class="DockableWindowOutput+AddinImpl" caption="Output Window" image="Images\DockableWindowOutput.png">
+          <InitialPlacement height="300" width="300" state="unpinned" position="right" />
+        </DockableWindow>
+        <DockableWindow id="Prof._Xia_Li_GeoSOS_ArcMapAddIn_DockableWindowGraphy" class="DockableWindowGraphy+AddinImpl" caption="Graphy Window" image="Images\DockableWindowGrphy.png">
+          <InitialPlacement height="300" width="300" state="unpinned" position="right" />
+        </DockableWindow>
+      </DockableWindows>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
