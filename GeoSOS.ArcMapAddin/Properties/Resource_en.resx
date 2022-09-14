@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="String1" xml:space="preserve">
     <value>Configuration Wizard of ANN-CA</value>
@@ -329,6 +329,9 @@
   </data>
   <data name="String162" xml:space="preserve">
     <value>说明：进行模拟起始时刻、终止时刻真实土地利用分类数据与模拟结果对比，可得到基于FoM的各类结果值。</value>
+  </data>
+  <data name="String163" xml:space="preserve">
+    <value>Add Restriction Layer</value>
   </data>
   <data name="String17" xml:space="preserve">
     <value>Please open the tutorial Mxd File - "LandUseChange_DongGuan.mxd”, located in: software decompression folder &amp; “\Tutorial Data\TutorialData_DongGuan_80m”.</value>

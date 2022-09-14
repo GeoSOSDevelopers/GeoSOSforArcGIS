@@ -8,7 +8,7 @@
   <Company>Prof. Xia Li</Company>
   <Date>2016/10/4</Date>
   <Targets>
-    <Target name="Desktop" version="10.1" />
+    <Target name="Desktop" version="10.2" />
   </Targets>
   <AddIn language="CLR" library="GeoSOS.ArcMapAddIn.dll" namespace="GeoSOS.ArcMapAddIn">
     <ArcMap>

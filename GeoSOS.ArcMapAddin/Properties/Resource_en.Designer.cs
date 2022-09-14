@@ -700,6 +700,15 @@ namespace GeoSOS.ArcMapAddIn.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Add Restriction Layer 的本地化字符串。
+        /// </summary>
+        internal static string String163 {
+            get {
+                return ResourceManager.GetString("String163", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Please open the tutorial Mxd File - &quot;LandUseChange_DongGuan.mxd”, located in: software decompression folder &amp; “\Tutorial Data\TutorialData_DongGuan_80m”. 的本地化字符串。
         /// </summary>
         internal static string String17 {

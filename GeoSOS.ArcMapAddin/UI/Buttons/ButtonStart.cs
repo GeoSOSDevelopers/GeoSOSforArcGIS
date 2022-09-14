@@ -100,6 +100,12 @@ namespace GeoSOS.ArcMapAddIn
                         ArcGISOperator.GetSmallestBound(rasterLayerStartImage, rasterLayerEndImage, listVariablesLayers, ref structRasterMetaData);
                         VariableMaintainer.CurrentFormLogisticCAWizard.CurrentStructRasterMetaData = structRasterMetaData;
                     }
+                    //添加限制层数据
+                    VariableMaintainer.CurrentDockableWindowOutput.AppendText(resourceManager.GetString("String171") +
+                            VariableMaintainer.RestrictLayerName + ".....\n");
+                    VariableMaintainer.RestrictImage = ArcGISOperator.ReadRaster(ArcGISOperator.GetRasterLayerByName(
+                            VariableMaintainer.RestrictLayerName), -9999f);
+
                     //最后用模拟起始时刻影像创建模拟影像
                     string dateTime = GeneralOpertor.GetDataTimeFullString(DateTime.Now);
                     string rasterName = "sim" + dateTime + ".img";
@@ -144,6 +150,12 @@ namespace GeoSOS.ArcMapAddIn
                         VariableMaintainer.CurrentFormANNCAWizard.SimulationEndImage = ArcGISOperator.ReadRaster(ArcGISOperator.GetRasterLayerByName(
                                 VariableMaintainer.CurrentFormANNCAWizard.SimulationEndImageName), -9999f);
                     }
+                    //添加限制层数据
+                    VariableMaintainer.CurrentDockableWindowOutput.AppendText(resourceManager.GetString("String171") +
+                            VariableMaintainer.RestrictLayerName + ".....\n");
+                    VariableMaintainer.RestrictImage = ArcGISOperator.ReadRaster(ArcGISOperator.GetRasterLayerByName(
+                            VariableMaintainer.RestrictLayerName), -9999f);
+
                     //最后用模拟起始时刻影像创建模拟影像
                     string dateTime = GeneralOpertor.GetDataTimeFullString(DateTime.Now);
                     string rasterName = "sim" + dateTime + ".img";
@@ -188,11 +200,11 @@ namespace GeoSOS.ArcMapAddIn
                         VariableMaintainer.CurrentFormDTCAWizard.SimulationEndImage = ArcGISOperator.ReadRaster(ArcGISOperator.GetRasterLayerByName(
                                 VariableMaintainer.CurrentFormDTCAWizard.SimulationEndImageName), -9999f);
                     }
-                    //20170619添加限制层数据
-                    //VariableMaintainer.CurrentDockableWindowOutput.AppendText("Add Restriction Layer " +
-                    //        "ACOres" + ".....\n");
-                    //VariableMaintainer.RestrictImage = ArcGISOperator.ReadRaster(ArcGISOperator.GetRasterLayerByName(
-                    //        "ACOres"), -9999f);
+                    //添加限制层数据
+                    VariableMaintainer.CurrentDockableWindowOutput.AppendText(resourceManager.GetString("String171") +
+                            VariableMaintainer.RestrictLayerName + ".....\n");
+                    VariableMaintainer.RestrictImage = ArcGISOperator.ReadRaster(ArcGISOperator.GetRasterLayerByName(
+                            VariableMaintainer.RestrictLayerName), -9999f);
 
                     //最后用模拟起始时刻影像创建模拟影像
                     string dateTime = GeneralOpertor.GetDataTimeFullString(DateTime.Now);

@@ -33,19 +33,6 @@
             this.comboBoxTrainingEndImage = new System.Windows.Forms.ComboBox();
             this.comboBoxTrainingStartImage = new System.Windows.Forms.ComboBox();
             this.wizardANNCA = new CristiPotlog.Controls.Wizard();
-            this.wizardPageIntroduction = new CristiPotlog.Controls.WizardPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.groupBox26 = new System.Windows.Forms.GroupBox();
-            this.pictureBoxShowSimulationInfo = new System.Windows.Forms.PictureBox();
-            this.pictureBoxShowTrainingInfo = new System.Windows.Forms.PictureBox();
-            this.labeltrainingInfoOutput = new System.Windows.Forms.Label();
-            this.labeltrainingInfoInput = new System.Windows.Forms.Label();
-            this.labelSimulationInfo = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.wizardPageWelcome = new CristiPotlog.Controls.WizardPage();
             this.label8 = new System.Windows.Forms.Label();
             this.linkLabelPaper = new System.Windows.Forms.LinkLabel();
@@ -214,14 +201,26 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.wizardPageIntroduction = new CristiPotlog.Controls.WizardPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.pictureBoxShowSimulationInfo = new System.Windows.Forms.PictureBox();
+            this.pictureBoxShowTrainingInfo = new System.Windows.Forms.PictureBox();
+            this.labeltrainingInfoOutput = new System.Windows.Forms.Label();
+            this.labeltrainingInfoInput = new System.Windows.Forms.Label();
+            this.labelSimulationInfo = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.groupBox29 = new System.Windows.Forms.GroupBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.comboBoxRestrictLayer = new System.Windows.Forms.ComboBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label58 = new System.Windows.Forms.Label();
             this.wizardANNCA.SuspendLayout();
-            this.wizardPageIntroduction.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.groupBox26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowSimulationInfo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowTrainingInfo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.wizardPageWelcome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxANN)).BeginInit();
             this.wizardPageFinish.SuspendLayout();
@@ -281,27 +280,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVariableDatas)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.wizardPageIntroduction.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBox26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowSimulationInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowTrainingInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxTrainingEndImage
             // 
-            resources.ApplyResources(this.comboBoxTrainingEndImage, "comboBoxTrainingEndImage");
             this.comboBoxTrainingEndImage.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxTrainingEndImage, "comboBoxTrainingEndImage");
             this.comboBoxTrainingEndImage.Name = "comboBoxTrainingEndImage";
             this.comboBoxTrainingEndImage.SelectedIndexChanged += new System.EventHandler(this.comboBoxEndImage_SelectedIndexChanged);
             // 
             // comboBoxTrainingStartImage
             // 
-            resources.ApplyResources(this.comboBoxTrainingStartImage, "comboBoxTrainingStartImage");
             this.comboBoxTrainingStartImage.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxTrainingStartImage, "comboBoxTrainingStartImage");
             this.comboBoxTrainingStartImage.Name = "comboBoxTrainingStartImage";
             this.comboBoxTrainingStartImage.SelectedIndexChanged += new System.EventHandler(this.comboBoxStartImage_SelectedIndexChanged);
             // 
             // wizardANNCA
             // 
             resources.ApplyResources(this.wizardANNCA, "wizardANNCA");
-            this.wizardANNCA.Controls.Add(this.wizardPageWelcome);
-            this.wizardANNCA.Controls.Add(this.wizardPageFinish);
             this.wizardANNCA.Controls.Add(this.wizardPageOutputSettings);
             this.wizardANNCA.Controls.Add(this.wizardPageParameters);
             this.wizardANNCA.Controls.Add(this.wizardPageSimulatedData);
@@ -309,6 +316,8 @@
             this.wizardANNCA.Controls.Add(this.wizardPageDataSampling);
             this.wizardANNCA.Controls.Add(this.wizardPageTrainingDataSettings);
             this.wizardANNCA.Controls.Add(this.wizardPageIntroduction);
+            this.wizardANNCA.Controls.Add(this.wizardPageWelcome);
+            this.wizardANNCA.Controls.Add(this.wizardPageFinish);
             this.wizardANNCA.HeaderFont = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.wizardANNCA.HeaderImage = ((System.Drawing.Image)(resources.GetObject("wizardANNCA.HeaderImage")));
             this.wizardANNCA.HeaderTitleFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -330,98 +339,8 @@
             this.wizardANNCA.AfterSwitchPages += new CristiPotlog.Controls.Wizard.AfterSwitchPagesEventHandler(this.wizardLogistcCA_AfterSwitchPages);
             this.wizardANNCA.Finish += new System.EventHandler(this.wizardLogistcCA_Finish);
             // 
-            // wizardPageIntroduction
-            // 
-            resources.ApplyResources(this.wizardPageIntroduction, "wizardPageIntroduction");
-            this.wizardPageIntroduction.Controls.Add(this.groupBox4);
-            this.wizardPageIntroduction.Controls.Add(this.groupBox26);
-            this.wizardPageIntroduction.Description = "  了解基于人工神经网络算法元胞自动机的基本原理。";
-            this.wizardPageIntroduction.Name = "wizardPageIntroduction";
-            this.wizardPageIntroduction.Title = "人工神经网络元胞自动机介绍";
-            // 
-            // groupBox4
-            // 
-            resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.Controls.Add(this.label53);
-            this.groupBox4.Controls.Add(this.pictureBox3);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.TabStop = false;
-            // 
-            // label53
-            // 
-            resources.ApplyResources(this.label53, "label53");
-            this.label53.Name = "label53";
-            // 
-            // pictureBox3
-            // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // groupBox26
-            // 
-            resources.ApplyResources(this.groupBox26, "groupBox26");
-            this.groupBox26.Controls.Add(this.pictureBoxShowSimulationInfo);
-            this.groupBox26.Controls.Add(this.pictureBoxShowTrainingInfo);
-            this.groupBox26.Controls.Add(this.labeltrainingInfoOutput);
-            this.groupBox26.Controls.Add(this.labeltrainingInfoInput);
-            this.groupBox26.Controls.Add(this.labelSimulationInfo);
-            this.groupBox26.Controls.Add(this.label46);
-            this.groupBox26.Controls.Add(this.label43);
-            this.groupBox26.Controls.Add(this.pictureBox2);
-            this.groupBox26.Name = "groupBox26";
-            this.groupBox26.TabStop = false;
-            // 
-            // pictureBoxShowSimulationInfo
-            // 
-            resources.ApplyResources(this.pictureBoxShowSimulationInfo, "pictureBoxShowSimulationInfo");
-            this.pictureBoxShowSimulationInfo.Image = global::GeoSOS.ArcMapAddIn.Properties.Resources.Info;
-            this.pictureBoxShowSimulationInfo.Name = "pictureBoxShowSimulationInfo";
-            this.pictureBoxShowSimulationInfo.TabStop = false;
-            this.pictureBoxShowSimulationInfo.Click += new System.EventHandler(this.pictureBoxShowSimulationInfo_Click);
-            // 
-            // pictureBoxShowTrainingInfo
-            // 
-            resources.ApplyResources(this.pictureBoxShowTrainingInfo, "pictureBoxShowTrainingInfo");
-            this.pictureBoxShowTrainingInfo.Image = global::GeoSOS.ArcMapAddIn.Properties.Resources.Info;
-            this.pictureBoxShowTrainingInfo.Name = "pictureBoxShowTrainingInfo";
-            this.pictureBoxShowTrainingInfo.TabStop = false;
-            this.pictureBoxShowTrainingInfo.Click += new System.EventHandler(this.pictureBoxShowTrainingInfo_Click);
-            // 
-            // labeltrainingInfoOutput
-            // 
-            resources.ApplyResources(this.labeltrainingInfoOutput, "labeltrainingInfoOutput");
-            this.labeltrainingInfoOutput.Name = "labeltrainingInfoOutput";
-            // 
-            // labeltrainingInfoInput
-            // 
-            resources.ApplyResources(this.labeltrainingInfoInput, "labeltrainingInfoInput");
-            this.labeltrainingInfoInput.Name = "labeltrainingInfoInput";
-            // 
-            // labelSimulationInfo
-            // 
-            resources.ApplyResources(this.labelSimulationInfo, "labelSimulationInfo");
-            this.labelSimulationInfo.Name = "labelSimulationInfo";
-            // 
-            // label46
-            // 
-            resources.ApplyResources(this.label46, "label46");
-            this.label46.Name = "label46";
-            // 
-            // label43
-            // 
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.Name = "label43";
-            // 
-            // pictureBox2
-            // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
             // wizardPageWelcome
             // 
-            resources.ApplyResources(this.wizardPageWelcome, "wizardPageWelcome");
             this.wizardPageWelcome.BackColor = System.Drawing.Color.Transparent;
             this.wizardPageWelcome.Controls.Add(this.label8);
             this.wizardPageWelcome.Controls.Add(this.linkLabelPaper);
@@ -430,6 +349,7 @@
             this.wizardPageWelcome.Controls.Add(this.checkBoxUseDefault);
             this.wizardPageWelcome.Controls.Add(this.label7);
             this.wizardPageWelcome.Description = "   该向导将引导您进行基于人工神经网络方法的元胞自动机模拟。";
+            resources.ApplyResources(this.wizardPageWelcome, "wizardPageWelcome");
             this.wizardPageWelcome.Name = "wizardPageWelcome";
             this.wizardPageWelcome.Style = CristiPotlog.Controls.WizardPageStyle.Welcome;
             this.wizardPageWelcome.Title = "人工神经网络元胞自动机模拟设置向导";
@@ -442,8 +362,8 @@
             // 
             // linkLabelPaper
             // 
-            resources.ApplyResources(this.linkLabelPaper, "linkLabelPaper");
             this.linkLabelPaper.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.linkLabelPaper, "linkLabelPaper");
             this.linkLabelPaper.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabelPaper.LinkColor = System.Drawing.Color.Black;
             this.linkLabelPaper.Name = "linkLabelPaper";
@@ -472,17 +392,17 @@
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
             this.label7.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
             // wizardPageFinish
             // 
-            resources.ApplyResources(this.wizardPageFinish, "wizardPageFinish");
             this.wizardPageFinish.Controls.Add(this.textBoxSummay);
             this.wizardPageFinish.Controls.Add(this.label9);
             this.wizardPageFinish.Controls.Add(this.label6);
             this.wizardPageFinish.Description = "  检查以下摘要信息。单击“完成”以进行模拟。";
+            resources.ApplyResources(this.wizardPageFinish, "wizardPageFinish");
             this.wizardPageFinish.Name = "wizardPageFinish";
             this.wizardPageFinish.Style = CristiPotlog.Controls.WizardPageStyle.Finish;
             this.wizardPageFinish.Title = "模拟设置完成";
@@ -502,22 +422,22 @@
             // 
             // label6
             // 
-            resources.ApplyResources(this.label6, "label6");
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
             // wizardPageOutputSettings
             // 
-            resources.ApplyResources(this.wizardPageOutputSettings, "wizardPageOutputSettings");
+            this.wizardPageOutputSettings.Controls.Add(this.groupBox29);
             this.wizardPageOutputSettings.Controls.Add(this.groupBox9);
             this.wizardPageOutputSettings.Controls.Add(this.groupBox13);
             this.wizardPageOutputSettings.Description = "  设置模拟过程中的配置。";
+            resources.ApplyResources(this.wizardPageOutputSettings, "wizardPageOutputSettings");
             this.wizardPageOutputSettings.Name = "wizardPageOutputSettings";
             this.wizardPageOutputSettings.Title = "模拟过程参数设置";
             // 
             // groupBox9
             // 
-            resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Controls.Add(this.radioButtonNotOutput);
             this.groupBox9.Controls.Add(this.radioButtonOutput);
             this.groupBox9.Controls.Add(this.label16);
@@ -526,6 +446,7 @@
             this.groupBox9.Controls.Add(this.label14);
             this.groupBox9.Controls.Add(this.numericUpDownOutputImage);
             this.groupBox9.Controls.Add(this.label15);
+            resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.TabStop = false;
             // 
@@ -595,10 +516,10 @@
             // 
             // groupBox13
             // 
-            resources.ApplyResources(this.groupBox13, "groupBox13");
             this.groupBox13.Controls.Add(this.label13);
             this.groupBox13.Controls.Add(this.numericUpDownRefresh);
             this.groupBox13.Controls.Add(this.label12);
+            resources.ApplyResources(this.groupBox13, "groupBox13");
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.TabStop = false;
             // 
@@ -635,22 +556,22 @@
             // 
             // wizardPageParameters
             // 
-            resources.ApplyResources(this.wizardPageParameters, "wizardPageParameters");
             this.wizardPageParameters.Controls.Add(this.groupBox24);
             this.wizardPageParameters.Controls.Add(this.groupBox25);
             this.wizardPageParameters.Controls.Add(this.groupBox23);
             this.wizardPageParameters.Description = "  设置模拟所需的各类参数。";
+            resources.ApplyResources(this.wizardPageParameters, "wizardPageParameters");
             this.wizardPageParameters.Name = "wizardPageParameters";
             this.wizardPageParameters.Title = "模拟参数设定";
             // 
             // groupBox24
             // 
-            resources.ApplyResources(this.groupBox24, "groupBox24");
             this.groupBox24.Controls.Add(this.pictureBox15);
             this.groupBox24.Controls.Add(this.pictureBox1);
             this.groupBox24.Controls.Add(this.dataGridViewMatrix);
             this.groupBox24.Controls.Add(this.buttonSaveMatrix);
             this.groupBox24.Controls.Add(this.buttonLoadMatrix);
+            resources.ApplyResources(this.groupBox24, "groupBox24");
             this.groupBox24.Name = "groupBox24";
             this.groupBox24.TabStop = false;
             // 
@@ -668,8 +589,8 @@
             // 
             // dataGridViewMatrix
             // 
-            resources.ApplyResources(this.dataGridViewMatrix, "dataGridViewMatrix");
             this.dataGridViewMatrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dataGridViewMatrix, "dataGridViewMatrix");
             this.dataGridViewMatrix.Name = "dataGridViewMatrix";
             this.dataGridViewMatrix.ReadOnly = true;
             this.dataGridViewMatrix.RowTemplate.Height = 23;
@@ -691,11 +612,11 @@
             // 
             // groupBox25
             // 
-            resources.ApplyResources(this.groupBox25, "groupBox25");
             this.groupBox25.Controls.Add(this.pictureBox17);
             this.groupBox25.Controls.Add(this.label32);
             this.groupBox25.Controls.Add(this.numericUpDownThreshold);
             this.groupBox25.Controls.Add(this.label35);
+            resources.ApplyResources(this.groupBox25, "groupBox25");
             this.groupBox25.Name = "groupBox25";
             this.groupBox25.TabStop = false;
             // 
@@ -712,13 +633,13 @@
             // 
             // numericUpDownThreshold
             // 
-            resources.ApplyResources(this.numericUpDownThreshold, "numericUpDownThreshold");
             this.numericUpDownThreshold.DecimalPlaces = 1;
             this.numericUpDownThreshold.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
+            resources.ApplyResources(this.numericUpDownThreshold, "numericUpDownThreshold");
             this.numericUpDownThreshold.Maximum = new decimal(new int[] {
             9,
             0,
@@ -744,12 +665,12 @@
             // 
             // groupBox23
             // 
-            resources.ApplyResources(this.groupBox23, "groupBox23");
             this.groupBox23.Controls.Add(this.pictureBox16);
             this.groupBox23.Controls.Add(this.pictureBox14);
             this.groupBox23.Controls.Add(this.labelDelta);
             this.groupBox23.Controls.Add(this.numericUpDownDelta);
             this.groupBox23.Controls.Add(this.label29);
+            resources.ApplyResources(this.groupBox23, "groupBox23");
             this.groupBox23.Name = "groupBox23";
             this.groupBox23.TabStop = false;
             // 
@@ -798,22 +719,22 @@
             // 
             // wizardPageSimulatedData
             // 
-            resources.ApplyResources(this.wizardPageSimulatedData, "wizardPageSimulatedData");
             this.wizardPageSimulatedData.Controls.Add(this.groupBox5);
             this.wizardPageSimulatedData.Controls.Add(this.groupBox6);
             this.wizardPageSimulatedData.Controls.Add(this.groupBox11);
             this.wizardPageSimulatedData.Controls.Add(this.groupBox10);
             this.wizardPageSimulatedData.Description = "  设置模拟要使用的数据。";
+            resources.ApplyResources(this.wizardPageSimulatedData, "wizardPageSimulatedData");
             this.wizardPageSimulatedData.Name = "wizardPageSimulatedData";
             this.wizardPageSimulatedData.Title = "模拟数据设置";
             // 
             // groupBox5
             // 
-            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.pictureBox12);
             this.groupBox5.Controls.Add(this.labelIterations);
             this.groupBox5.Controls.Add(this.numericUpDownIterations);
             this.groupBox5.Controls.Add(this.label4);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
@@ -830,12 +751,12 @@
             // 
             // numericUpDownIterations
             // 
-            resources.ApplyResources(this.numericUpDownIterations, "numericUpDownIterations");
             this.numericUpDownIterations.Increment = new decimal(new int[] {
             10,
             0,
             0,
             0});
+            resources.ApplyResources(this.numericUpDownIterations, "numericUpDownIterations");
             this.numericUpDownIterations.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -860,7 +781,6 @@
             // 
             // groupBox6
             // 
-            resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Controls.Add(this.groupBox27);
             this.groupBox6.Controls.Add(this.pictureBox11);
             this.groupBox6.Controls.Add(this.pictureBox13);
@@ -874,6 +794,7 @@
             this.groupBox6.Controls.Add(this.buttonCalConvertCells);
             this.groupBox6.Controls.Add(this.numericUpDownConvertCount);
             this.groupBox6.Controls.Add(this.label10);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.TabStop = false;
             // 
@@ -923,8 +844,8 @@
             // 
             // pictureBoxCalCovertAmount
             // 
-            resources.ApplyResources(this.pictureBoxCalCovertAmount, "pictureBoxCalCovertAmount");
             this.pictureBoxCalCovertAmount.Image = global::GeoSOS.ArcMapAddIn.Properties.Resources.Info;
+            resources.ApplyResources(this.pictureBoxCalCovertAmount, "pictureBoxCalCovertAmount");
             this.pictureBoxCalCovertAmount.Name = "pictureBoxCalCovertAmount";
             this.pictureBoxCalCovertAmount.TabStop = false;
             this.pictureBoxCalCovertAmount.Click += new System.EventHandler(this.pictureBoxCalCovertAmount_Click);
@@ -943,12 +864,12 @@
             // 
             // numericUpDownConvertCount
             // 
-            resources.ApplyResources(this.numericUpDownConvertCount, "numericUpDownConvertCount");
             this.numericUpDownConvertCount.Increment = new decimal(new int[] {
             100,
             0,
             0,
             0});
+            resources.ApplyResources(this.numericUpDownConvertCount, "numericUpDownConvertCount");
             this.numericUpDownConvertCount.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -973,16 +894,16 @@
             // 
             // groupBox11
             // 
-            resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Controls.Add(this.comboBoxSimEndImage);
             this.groupBox11.Controls.Add(this.label18);
+            resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.TabStop = false;
             // 
             // comboBoxSimEndImage
             // 
-            resources.ApplyResources(this.comboBoxSimEndImage, "comboBoxSimEndImage");
             this.comboBoxSimEndImage.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxSimEndImage, "comboBoxSimEndImage");
             this.comboBoxSimEndImage.Name = "comboBoxSimEndImage";
             this.comboBoxSimEndImage.SelectedIndexChanged += new System.EventHandler(this.comboBoxSimEndImage_SelectedIndexChanged);
             // 
@@ -993,16 +914,16 @@
             // 
             // groupBox10
             // 
-            resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Controls.Add(this.comboBoxSimStartImage);
             this.groupBox10.Controls.Add(this.label19);
+            resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.TabStop = false;
             // 
             // comboBoxSimStartImage
             // 
-            resources.ApplyResources(this.comboBoxSimStartImage, "comboBoxSimStartImage");
             this.comboBoxSimStartImage.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxSimStartImage, "comboBoxSimStartImage");
             this.comboBoxSimStartImage.Name = "comboBoxSimStartImage";
             this.comboBoxSimStartImage.SelectedIndexChanged += new System.EventHandler(this.comboBoxSimStartImage_SelectedIndexChanged);
             // 
@@ -1013,16 +934,15 @@
             // 
             // wizardPageANNTraining
             // 
-            resources.ApplyResources(this.wizardPageANNTraining, "wizardPageANNTraining");
             this.wizardPageANNTraining.Controls.Add(this.groupBox16);
             this.wizardPageANNTraining.Controls.Add(this.groupBox8);
             this.wizardPageANNTraining.Description = "  训练人工神经网络进行土地利用类型的预测。";
+            resources.ApplyResources(this.wizardPageANNTraining, "wizardPageANNTraining");
             this.wizardPageANNTraining.Name = "wizardPageANNTraining";
             this.wizardPageANNTraining.Title = "人工神经网络训练";
             // 
             // groupBox16
             // 
-            resources.ApplyResources(this.groupBox16, "groupBox16");
             this.groupBox16.Controls.Add(this.label65);
             this.groupBox16.Controls.Add(this.label24);
             this.groupBox16.Controls.Add(this.labelValidationAccuracy);
@@ -1032,6 +952,7 @@
             this.groupBox16.Controls.Add(this.groupBox20);
             this.groupBox16.Controls.Add(this.labelTrainingProcess);
             this.groupBox16.Controls.Add(this.zedGraphControl);
+            resources.ApplyResources(this.groupBox16, "groupBox16");
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.TabStop = false;
             // 
@@ -1090,7 +1011,6 @@
             // 
             // groupBox8
             // 
-            resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Controls.Add(this.labelLearningRate);
             this.groupBox8.Controls.Add(this.labelTrainingIterations);
             this.groupBox8.Controls.Add(this.labelExecuteTraining);
@@ -1118,6 +1038,7 @@
             this.groupBox8.Controls.Add(this.label38);
             this.groupBox8.Controls.Add(this.numericUpDownHiddenLayerNeurons);
             this.groupBox8.Controls.Add(this.label37);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
             // 
@@ -1138,8 +1059,8 @@
             // 
             // pictureBoxLearningRate
             // 
-            resources.ApplyResources(this.pictureBoxLearningRate, "pictureBoxLearningRate");
             this.pictureBoxLearningRate.Image = global::GeoSOS.ArcMapAddIn.Properties.Resources.Info;
+            resources.ApplyResources(this.pictureBoxLearningRate, "pictureBoxLearningRate");
             this.pictureBoxLearningRate.Name = "pictureBoxLearningRate";
             this.pictureBoxLearningRate.TabStop = false;
             this.pictureBoxLearningRate.Click += new System.EventHandler(this.pictureBoxLearningRate_Click);
@@ -1167,16 +1088,16 @@
             // 
             // pictureBoxProcessTraining
             // 
-            resources.ApplyResources(this.pictureBoxProcessTraining, "pictureBoxProcessTraining");
             this.pictureBoxProcessTraining.Image = global::GeoSOS.ArcMapAddIn.Properties.Resources.Info;
+            resources.ApplyResources(this.pictureBoxProcessTraining, "pictureBoxProcessTraining");
             this.pictureBoxProcessTraining.Name = "pictureBoxProcessTraining";
             this.pictureBoxProcessTraining.TabStop = false;
             this.pictureBoxProcessTraining.Click += new System.EventHandler(this.pictureBoxProcessTraining_Click);
             // 
             // pictureBoxInfoTrainningIteration
             // 
-            resources.ApplyResources(this.pictureBoxInfoTrainningIteration, "pictureBoxInfoTrainningIteration");
             this.pictureBoxInfoTrainningIteration.Image = global::GeoSOS.ArcMapAddIn.Properties.Resources.Info;
+            resources.ApplyResources(this.pictureBoxInfoTrainningIteration, "pictureBoxInfoTrainningIteration");
             this.pictureBoxInfoTrainningIteration.Name = "pictureBoxInfoTrainningIteration";
             this.pictureBoxInfoTrainningIteration.TabStop = false;
             this.pictureBoxInfoTrainningIteration.Click += new System.EventHandler(this.pictureBoxInfoTrainningIteration_Click);
@@ -1203,12 +1124,12 @@
             // 
             // numericUpDownTrainningIterations
             // 
-            resources.ApplyResources(this.numericUpDownTrainningIterations, "numericUpDownTrainningIterations");
             this.numericUpDownTrainningIterations.Increment = new decimal(new int[] {
             100,
             0,
             0,
             0});
+            resources.ApplyResources(this.numericUpDownTrainningIterations, "numericUpDownTrainningIterations");
             this.numericUpDownTrainningIterations.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -1233,13 +1154,13 @@
             // 
             // numericUpDownLearningRate
             // 
-            resources.ApplyResources(this.numericUpDownLearningRate, "numericUpDownLearningRate");
             this.numericUpDownLearningRate.DecimalPlaces = 2;
             this.numericUpDownLearningRate.Increment = new decimal(new int[] {
             5,
             0,
             0,
             131072});
+            resources.ApplyResources(this.numericUpDownLearningRate, "numericUpDownLearningRate");
             this.numericUpDownLearningRate.Maximum = new decimal(new int[] {
             1,
             0,
@@ -1331,20 +1252,20 @@
             // 
             // wizardPageDataSampling
             // 
-            resources.ApplyResources(this.wizardPageDataSampling, "wizardPageDataSampling");
             this.wizardPageDataSampling.Controls.Add(this.groupBox28);
             this.wizardPageDataSampling.Controls.Add(this.progressBarCalculate);
             this.wizardPageDataSampling.Controls.Add(this.labelCalculte);
             this.wizardPageDataSampling.Controls.Add(this.groupBox3);
             this.wizardPageDataSampling.Controls.Add(this.groupBox7);
             this.wizardPageDataSampling.Description = "  获取人工神经网络的抽样数据。";
+            resources.ApplyResources(this.wizardPageDataSampling, "wizardPageDataSampling");
             this.wizardPageDataSampling.Name = "wizardPageDataSampling";
             this.wizardPageDataSampling.Title = "抽样数据";
             // 
             // groupBox28
             // 
-            resources.ApplyResources(this.groupBox28, "groupBox28");
             this.groupBox28.Controls.Add(this.pictureBox7);
+            resources.ApplyResources(this.groupBox28, "groupBox28");
             this.groupBox28.Name = "groupBox28";
             this.groupBox28.TabStop = false;
             // 
@@ -1368,7 +1289,6 @@
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Controls.Add(this.groupBox15);
             this.groupBox3.Controls.Add(this.groupBox14);
@@ -1397,6 +1317,7 @@
             this.groupBox3.Controls.Add(this.label22);
             this.groupBox3.Controls.Add(this.labelSamplingPrecent);
             this.groupBox3.Controls.Add(this.label5);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -1544,14 +1465,13 @@
             // 
             // groupBox7
             // 
-            resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Controls.Add(this.dataGridViewLandUse);
+            resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
             // dataGridViewLandUse
             // 
-            resources.ApplyResources(this.dataGridViewLandUse, "dataGridViewLandUse");
             this.dataGridViewLandUse.AllowUserToAddRows = false;
             this.dataGridViewLandUse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLandUse.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1559,6 +1479,7 @@
             this.ColumnLUDescription,
             this.landuseColumnIsUrban,
             this.ColumnLUColor});
+            resources.ApplyResources(this.dataGridViewLandUse, "dataGridViewLandUse");
             this.dataGridViewLandUse.Name = "dataGridViewLandUse";
             this.dataGridViewLandUse.RowTemplate.Height = 23;
             // 
@@ -1592,22 +1513,22 @@
             // 
             // wizardPageTrainingDataSettings
             // 
-            resources.ApplyResources(this.wizardPageTrainingDataSettings, "wizardPageTrainingDataSettings");
             this.wizardPageTrainingDataSettings.Controls.Add(this.groupBox22);
             this.wizardPageTrainingDataSettings.Controls.Add(this.groupBox12);
             this.wizardPageTrainingDataSettings.Controls.Add(this.groupBox2);
             this.wizardPageTrainingDataSettings.Controls.Add(this.groupBox1);
             this.wizardPageTrainingDataSettings.Description = "  设置训练人工神经网络将使用的空间数据。";
+            resources.ApplyResources(this.wizardPageTrainingDataSettings, "wizardPageTrainingDataSettings");
             this.wizardPageTrainingDataSettings.Name = "wizardPageTrainingDataSettings";
             this.wizardPageTrainingDataSettings.Title = "训练数据设置";
             // 
             // groupBox22
             // 
-            resources.ApplyResources(this.groupBox22, "groupBox22");
             this.groupBox22.Controls.Add(this.label55);
             this.groupBox22.Controls.Add(this.pictureBox5);
             this.groupBox22.Controls.Add(this.numericUpDownNeiWindow);
             this.groupBox22.Controls.Add(this.label3);
+            resources.ApplyResources(this.groupBox22, "groupBox22");
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.TabStop = false;
             // 
@@ -1624,12 +1545,12 @@
             // 
             // numericUpDownNeiWindow
             // 
-            resources.ApplyResources(this.numericUpDownNeiWindow, "numericUpDownNeiWindow");
             this.numericUpDownNeiWindow.Increment = new decimal(new int[] {
             2,
             0,
             0,
             0});
+            resources.ApplyResources(this.numericUpDownNeiWindow, "numericUpDownNeiWindow");
             this.numericUpDownNeiWindow.Maximum = new decimal(new int[] {
             9,
             0,
@@ -1654,10 +1575,10 @@
             // 
             // groupBox12
             // 
-            resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.Controls.Add(this.label20);
             this.groupBox12.Controls.Add(this.numericUpDownSamplingPrecent);
             this.groupBox12.Controls.Add(this.label17);
+            resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.TabStop = false;
             // 
@@ -1688,12 +1609,12 @@
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.label52);
             this.groupBox2.Controls.Add(this.pictureBox4);
             this.groupBox2.Controls.Add(this.buttonDeleteRuleImageImage);
             this.groupBox2.Controls.Add(this.buttonAddRuleImageFile);
             this.groupBox2.Controls.Add(this.dataGridViewVariableDatas);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -1724,11 +1645,11 @@
             // 
             // dataGridViewVariableDatas
             // 
-            resources.ApplyResources(this.dataGridViewVariableDatas, "dataGridViewVariableDatas");
             this.dataGridViewVariableDatas.AllowUserToAddRows = false;
             this.dataGridViewVariableDatas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVariableDatas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DataGridViewTextBoxColumnLayers});
+            resources.ApplyResources(this.dataGridViewVariableDatas, "dataGridViewVariableDatas");
             this.dataGridViewVariableDatas.Name = "dataGridViewVariableDatas";
             this.dataGridViewVariableDatas.RowTemplate.Height = 23;
             // 
@@ -1740,11 +1661,11 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.comboBoxTrainingEndImage);
             this.groupBox1.Controls.Add(this.comboBoxTrainingStartImage);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -1758,23 +1679,145 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // wizardPageIntroduction
+            // 
+            this.wizardPageIntroduction.Controls.Add(this.groupBox4);
+            this.wizardPageIntroduction.Controls.Add(this.groupBox26);
+            this.wizardPageIntroduction.Description = "  了解基于人工神经网络算法元胞自动机的基本原理。";
+            resources.ApplyResources(this.wizardPageIntroduction, "wizardPageIntroduction");
+            this.wizardPageIntroduction.Name = "wizardPageIntroduction";
+            this.wizardPageIntroduction.Title = "人工神经网络元胞自动机介绍";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label53);
+            this.groupBox4.Controls.Add(this.pictureBox3);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // label53
+            // 
+            resources.ApplyResources(this.label53, "label53");
+            this.label53.Name = "label53";
+            // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // groupBox26
+            // 
+            this.groupBox26.Controls.Add(this.pictureBoxShowSimulationInfo);
+            this.groupBox26.Controls.Add(this.pictureBoxShowTrainingInfo);
+            this.groupBox26.Controls.Add(this.labeltrainingInfoOutput);
+            this.groupBox26.Controls.Add(this.labeltrainingInfoInput);
+            this.groupBox26.Controls.Add(this.labelSimulationInfo);
+            this.groupBox26.Controls.Add(this.label46);
+            this.groupBox26.Controls.Add(this.label43);
+            this.groupBox26.Controls.Add(this.pictureBox2);
+            resources.ApplyResources(this.groupBox26, "groupBox26");
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.TabStop = false;
+            // 
+            // pictureBoxShowSimulationInfo
+            // 
+            this.pictureBoxShowSimulationInfo.Image = global::GeoSOS.ArcMapAddIn.Properties.Resources.Info;
+            resources.ApplyResources(this.pictureBoxShowSimulationInfo, "pictureBoxShowSimulationInfo");
+            this.pictureBoxShowSimulationInfo.Name = "pictureBoxShowSimulationInfo";
+            this.pictureBoxShowSimulationInfo.TabStop = false;
+            this.pictureBoxShowSimulationInfo.Click += new System.EventHandler(this.pictureBoxShowSimulationInfo_Click);
+            // 
+            // pictureBoxShowTrainingInfo
+            // 
+            this.pictureBoxShowTrainingInfo.Image = global::GeoSOS.ArcMapAddIn.Properties.Resources.Info;
+            resources.ApplyResources(this.pictureBoxShowTrainingInfo, "pictureBoxShowTrainingInfo");
+            this.pictureBoxShowTrainingInfo.Name = "pictureBoxShowTrainingInfo";
+            this.pictureBoxShowTrainingInfo.TabStop = false;
+            this.pictureBoxShowTrainingInfo.Click += new System.EventHandler(this.pictureBoxShowTrainingInfo_Click);
+            // 
+            // labeltrainingInfoOutput
+            // 
+            resources.ApplyResources(this.labeltrainingInfoOutput, "labeltrainingInfoOutput");
+            this.labeltrainingInfoOutput.Name = "labeltrainingInfoOutput";
+            // 
+            // labeltrainingInfoInput
+            // 
+            resources.ApplyResources(this.labeltrainingInfoInput, "labeltrainingInfoInput");
+            this.labeltrainingInfoInput.Name = "labeltrainingInfoInput";
+            // 
+            // labelSimulationInfo
+            // 
+            resources.ApplyResources(this.labelSimulationInfo, "labelSimulationInfo");
+            this.labelSimulationInfo.Name = "labelSimulationInfo";
+            // 
+            // label46
+            // 
+            resources.ApplyResources(this.label46, "label46");
+            this.label46.Name = "label46";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Name = "label43";
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // groupBox29
+            // 
+            this.groupBox29.Controls.Add(this.label57);
+            this.groupBox29.Controls.Add(this.pictureBox18);
+            this.groupBox29.Controls.Add(this.comboBoxRestrictLayer);
+            this.groupBox29.Controls.Add(this.pictureBox6);
+            this.groupBox29.Controls.Add(this.label58);
+            resources.ApplyResources(this.groupBox29, "groupBox29");
+            this.groupBox29.Name = "groupBox29";
+            this.groupBox29.TabStop = false;
+            // 
+            // label57
+            // 
+            resources.ApplyResources(this.label57, "label57");
+            this.label57.Name = "label57";
+            // 
+            // pictureBox18
+            // 
+            resources.ApplyResources(this.pictureBox18, "pictureBox18");
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.TabStop = false;
+            // 
+            // comboBoxRestrictLayer
+            // 
+            this.comboBoxRestrictLayer.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxRestrictLayer, "comboBoxRestrictLayer");
+            this.comboBoxRestrictLayer.Name = "comboBoxRestrictLayer";
+            this.comboBoxRestrictLayer.SelectedIndexChanged += new System.EventHandler(this.comboBoxRestrictLayer_SelectedIndexChanged);
+            // 
+            // pictureBox6
+            // 
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            // 
+            // label58
+            // 
+            resources.ApplyResources(this.label58, "label58");
+            this.label58.Name = "label58";
+            // 
             // FormANNCAWizard
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.wizardANNCA);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormANNCAWizard";
             this.ShowIcon = false;
             this.wizardANNCA.ResumeLayout(false);
-            this.wizardPageIntroduction.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.groupBox26.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowSimulationInfo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowTrainingInfo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.wizardPageWelcome.ResumeLayout(false);
             this.wizardPageWelcome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxANN)).EndInit();
@@ -1851,6 +1894,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVariableDatas)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.wizardPageIntroduction.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.groupBox26.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowSimulationInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowTrainingInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox29.ResumeLayout(false);
+            this.groupBox29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2041,6 +2095,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnLUDescription;
         private System.Windows.Forms.DataGridViewCheckBoxColumn landuseColumnIsUrban;
         private System.Windows.Forms.DataGridViewImageColumn ColumnLUColor;
+        private System.Windows.Forms.GroupBox groupBox29;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.ComboBox comboBoxRestrictLayer;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label58;
 
 
 

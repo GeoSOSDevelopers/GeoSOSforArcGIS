@@ -781,6 +781,15 @@ namespace GeoSOS.ArcMapAddIn.Properties {
         }
         
         /// <summary>
+        ///   查找类似 添加限制图层 的本地化字符串。
+        /// </summary>
+        internal static string String171 {
+            get {
+                return ResourceManager.GetString("String171", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 进行基于决策树的CA模拟设置如下： 的本地化字符串。
         /// </summary>
         internal static string String18 {

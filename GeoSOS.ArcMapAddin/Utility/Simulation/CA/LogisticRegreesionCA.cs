@@ -170,6 +170,10 @@ namespace GeoSOS.ArcMapAddIn.Utility.CA
                     randomColumn = random.Next(0, columnCount);
                     if (pst[randomRow, randomColumn] > Convert.ToSingle(random.NextDouble()))
                     {
+                        //添加限制层数据
+                        if (VariableMaintainer.RestrictImage[randomRow, randomColumn] == 1)
+                            continue;
+
                         oldValue = simulationImage[randomRow, randomColumn];
                         newValue = formLogisticCAWizard.LandUseClassificationInfo.UrbanValues[0].LanduseTypeValue;
                         simulationImage[randomRow, randomColumn] = newValue;

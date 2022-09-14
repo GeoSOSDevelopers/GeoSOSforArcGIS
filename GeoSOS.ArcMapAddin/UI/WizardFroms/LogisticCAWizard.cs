@@ -135,7 +135,7 @@ namespace GeoSOS.ArcMapAddIn
         /// <summary>
         /// 标识是否已经完成了逻辑回归
         /// </summary>
-        private bool isRegressed=false;
+        private bool isRegressed = false;
         /// <summary>
         /// 模拟结果图层的名称
         /// </summary>
@@ -416,6 +416,19 @@ namespace GeoSOS.ArcMapAddIn
                     }
                 }
             }
+            //模拟参数设置页切换前的设置
+            else if (e.OldIndex == 5 && e.NewIndex == 6)
+            {
+                //如果不是第一次打开窗体，则再次读取地图数据
+                application = ArcMap.Application;
+                document = application.Document as IMxDocument;
+                map = document.FocusMap;
+                ArcGISOperator.FoucsMap = document.FocusMap;
+                for (int i = 0; i < map.LayerCount; i++)
+                {
+                    comboBoxRestrictLayer.Items.Add(map.get_Layer(i).Name);
+                }
+            }
             //模拟数据设置页可以继续的条件
             else if (e.OldIndex == 6 && e.NewIndex == 7)
             {
@@ -509,16 +522,16 @@ namespace GeoSOS.ArcMapAddIn
                         coef[2] = -1.329f;
                         coef[3] = -1.107f;
                         coef[4] = 1.729f;
-                        
+
                         outputFolder = GetOutputFolder();
                         convertCount = 19260;
                         simulationIterations = 100;
                         refreshInterval = 10;
                         outputImageInterval = 10;
                         delta = 3;
-                        numericUpDownConvertCount.Value=19260;
-						numericUpDownIterations.Value=100;
-						numericUpDownDelta.Value=3;
+                        numericUpDownConvertCount.Value = 19260;
+                        numericUpDownIterations.Value = 100;
+                        numericUpDownDelta.Value = 3;
                         numericUpDownRefresh.Value = 10;
                         numericUpDownOutputImage.Value = 10;
                         isOutput = false;
@@ -548,7 +561,7 @@ namespace GeoSOS.ArcMapAddIn
                 document = application.Document as IMxDocument;
                 map = document.FocusMap;
                 ArcGISOperator.FoucsMap = document.FocusMap;
-                 //如果图层选择框为空
+                //如果图层选择框为空
                 if (comboBoxTrainingStartImage.Items.Count == 0)
                 {
                     for (int i = 0; i < map.LayerCount; i++)
@@ -563,7 +576,7 @@ namespace GeoSOS.ArcMapAddIn
             }
             //切换到土地利用类型设置页时首先获取图层信息，然后填充土地利用类型
             else if (e.OldIndex == 2 && e.NewIndex == 3)
-            {                
+            {
                 listVariableLayersName.Clear();
                 trainingStartImageName = comboBoxTrainingStartImage.SelectedItem.ToString();
                 trainingEndImageName = comboBoxTrainingEndImage.SelectedItem.ToString();
@@ -711,7 +724,7 @@ namespace GeoSOS.ArcMapAddIn
 
                 convertCount = Convert.ToInt32(numericUpDownConvertCount.Value);
                 simulationIterations = Convert.ToInt32(numericUpDownIterations.Value);
-                delta = Convert.ToInt32(numericUpDownDelta.Value);
+                delta = Convert.ToInt32(numericUpDownDelta.Value);                
 
                 numericUpDownRefresh.Value = 10;
                 numericUpDownOutputImage.Value = 10;
@@ -720,7 +733,7 @@ namespace GeoSOS.ArcMapAddIn
             }
             //切换到完成页时填充摘要，同时保存模拟过程输出参数的信息
             else if (e.OldIndex == 6 && e.NewIndex == 7)
-            {
+            {               
                 refreshInterval = Convert.ToInt32(numericUpDownRefresh.Value);
                 outputImageInterval = Convert.ToInt32(numericUpDownOutputImage.Value);
                 if (radioButtonOutput.Checked)
@@ -1051,6 +1064,7 @@ namespace GeoSOS.ArcMapAddIn
             sb.AppendLine(resourceManager.GetString("String25") + Convert.ToInt32(numericUpDownConvertCount.Value / numericUpDownIterations.Value).ToString() + resourceManager.GetString("String23"));
             sb.AppendLine();
             sb.AppendLine(resourceManager.GetString("String26") + numericUpDownDelta.Value.ToString());
+            sb.AppendLine(resourceManager.GetString("String171") + ": " + VariableMaintainer.RestrictLayerName);
             sb.AppendLine();
             sb.AppendLine();
 
@@ -1136,6 +1150,7 @@ namespace GeoSOS.ArcMapAddIn
             this.comboBoxTrainingEndImage.SelectedIndex = -1;
             this.comboBoxSimStartImage.SelectedIndex = -1;
             this.comboBoxSimEndImage.SelectedIndex = -1;
+            this.comboBoxRestrictLayer.SelectedIndex = -1;
             this.comboBoxTrainingStartImage.Text = "";
             this.comboBoxTrainingEndImage.Text = "";
             this.comboBoxSimStartImage.Text = "";
@@ -1147,6 +1162,12 @@ namespace GeoSOS.ArcMapAddIn
         }
 
         #endregion
+
+        private void comboBoxRestrictLayer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxRestrictLayer.SelectedIndex != -1)
+                VariableMaintainer.RestrictLayerName = comboBoxRestrictLayer.Items[comboBoxRestrictLayer.SelectedIndex].ToString();
+        }
 
     }
 }

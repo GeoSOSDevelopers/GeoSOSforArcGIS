@@ -116,6 +116,10 @@ namespace GeoSOS.ArcMapAddIn.Utility.CA
                         if (simulationImage[randomRow, randomColumn] == -9999f)
                             continue;
 
+                        //添加限制层数据
+                        if (VariableMaintainer.RestrictImage[randomRow, randomColumn] == 1)
+                            continue;
+
                         double[] tempInputsArray = new double[inputNeuronsCount];
                         double[] tempOutputsArray = new double[outputNeuronsCount];
                         //获取该栅格的空间变量值

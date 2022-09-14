@@ -540,6 +540,19 @@ namespace GeoSOS.ArcMapAddIn
                 if (sb.Length > 0)
                     MessageBox.Show(sb.ToString(), resourceManager.GetString("String2"), MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
+            //限制图层
+            else if (e.OldIndex == 6 && e.NewIndex == 7)
+            {
+                //如果不是第一次打开窗体，则再次读取地图数据
+                application = ArcMap.Application;
+                document = application.Document as IMxDocument;
+                map = document.FocusMap;
+                ArcGISOperator.FoucsMap = document.FocusMap;
+                for (int i = 0; i < map.LayerCount; i++)
+                {
+                    comboBoxRestrictLayer.Items.Add(map.get_Layer(i).Name);
+                }
+            }
             //如果欢迎页选择使用默认，则填充已知的信息，基本上用户只需要点击下一步即可完成配置
             else if (e.OldIndex == 0)
             {
@@ -1399,6 +1412,7 @@ namespace GeoSOS.ArcMapAddIn
 
             sb.AppendLine(resourceManager.GetString("String26") + this.delta.ToString());
             sb.AppendLine(resourceManager.GetString("String78") + this.convertThreshold.ToString());
+            sb.AppendLine(resourceManager.GetString("String171") + ": " + VariableMaintainer.RestrictLayerName);
             sb.AppendLine();
 
             sb.AppendLine(resourceManager.GetString("String32"));
@@ -1508,6 +1522,7 @@ namespace GeoSOS.ArcMapAddIn
             this.comboBoxTrainingEndImage.Text = "";
             this.comboBoxSimStartImage.Text = "";
             this.comboBoxSimEndImage.Text = "";
+            this.comboBoxRestrictLayer.SelectedIndex = -1;
             VariableMaintainer.IsSimulationFinished = false;
             this.numericUpDownConvertCount.Value = 100;
             this.numericUpDownDelta.Value = 1;
@@ -1548,6 +1563,12 @@ namespace GeoSOS.ArcMapAddIn
         }
 
         #endregion
-                
+
+        private void comboBoxRestrictLayer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxRestrictLayer.SelectedIndex != -1)
+                VariableMaintainer.RestrictLayerName = comboBoxRestrictLayer.Items[comboBoxRestrictLayer.SelectedIndex].ToString();
+        }
+
     }
 }

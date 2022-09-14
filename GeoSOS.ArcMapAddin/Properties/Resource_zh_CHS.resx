@@ -357,6 +357,9 @@
   <data name="String170" xml:space="preserve">
     <value>已经完成面优化过程。效用函数的最大值为：</value>
   </data>
+  <data name="String171" xml:space="preserve">
+    <value>添加限制图层</value>
+  </data>
   <data name="String18" xml:space="preserve">
     <value>进行基于决策树的CA模拟设置如下：</value>
   </data>

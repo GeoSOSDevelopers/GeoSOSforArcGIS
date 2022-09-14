@@ -37,12 +37,19 @@ namespace GeoSOS.ArcMapAddIn
         private static string optimizationExpression;
         private static bool isACOUtilitySet = false;
         private static bool isACOParametersSet = false;
+        private static string restrictLayerName = "";
         //20170619添加限制层数据
         private static float[,] restrictImage = null;
         public static float[,] RestrictImage
         {
             get { return restrictImage; }
             set { restrictImage = value; }
+        }
+
+        public static string RestrictLayerName
+        {
+            get { return restrictLayerName; }
+            set { restrictLayerName = value; }
         }
 
         public static IMap CurrentFoucsMap
