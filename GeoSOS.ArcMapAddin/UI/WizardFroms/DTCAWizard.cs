@@ -1220,6 +1220,7 @@ namespace GeoSOS.ArcMapAddIn
             this.numericUpDownIterations.Value = 10;
             isGenerated = false;
             decisionTree = null;
+            this.comboBoxRestrictLayer.SelectedIndex = -1;
         }
 
         #endregion

@@ -117,8 +117,11 @@ namespace GeoSOS.ArcMapAddIn.Utility.CA
                             continue;
 
                         //添加限制层数据
-                        if (VariableMaintainer.RestrictImage[randomRow, randomColumn] == 1)
-                            continue;
+                        if (VariableMaintainer.RestrictImage != null)
+                        {
+                            if (VariableMaintainer.RestrictImage[randomRow, randomColumn] == 1)
+                                continue;
+                        }
 
                         double[] tempInputsArray = new double[inputNeuronsCount];
                         double[] tempOutputsArray = new double[outputNeuronsCount];

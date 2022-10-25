@@ -1531,6 +1531,7 @@ namespace GeoSOS.ArcMapAddIn
             numericUpDownTrainningIterations.Value = 500;
             ann = null;
             isSampled = false;
+            this.comboBoxRestrictLayer.SelectedIndex = -1;
         }
 
         /// <summary>

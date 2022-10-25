@@ -156,8 +156,11 @@ namespace GeoSOS.ArcMapAddIn.Utility.CA
                         //if ((oldValue != newValue) && (probability >= gamma))
                         //添加限制层数据
                         // if ((VariableMaintainer.RestrictImage[randomRow, randomColumn] == 2) || (VariableMaintainer.RestrictImage[randomRow, randomColumn] == 1))
-                        if (VariableMaintainer.RestrictImage[randomRow, randomColumn] == 1)
-                            continue;
+                        if (VariableMaintainer.RestrictImage != null)
+                        {
+                            if (VariableMaintainer.RestrictImage[randomRow, randomColumn] == 1)
+                                continue;
+                        }
 
                         //引入随机因素，如果邻域因素大于随机数
                         if ((oldValue != newValue) && (neighbourValue > convertThreshold))

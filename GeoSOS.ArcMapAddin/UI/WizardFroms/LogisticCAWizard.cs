@@ -1158,6 +1158,7 @@ namespace GeoSOS.ArcMapAddIn
             VariableMaintainer.IsSimulationFinished = false;
             this.numericUpDownConvertCount.Value = 100;
             this.numericUpDownIterations.Value = 10;
+            this.comboBoxRestrictLayer.SelectedIndex = -1;
             isRegressed = false;
         }
 
