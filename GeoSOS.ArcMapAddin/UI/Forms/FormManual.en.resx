@@ -424,10 +424,10 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 22</value>
+    <value>154, 33</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 17</value>
+    <value>543, 24</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Please open “GeoSOS for ArcGIS User Manual.pdf” in “User</value>
@@ -436,22 +436,13 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 86</value>
+    <value>154, 129</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 17</value>
+    <value>198, 24</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Or get online help at :</value>
-  </data>
-  <data name="linkLabelhelp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="linkLabelhelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 110</value>
-  </data>
-  <data name="linkLabelhelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>372, 17</value>
   </data>
   <data name="buttonOk.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -463,13 +454,20 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 45</value>
+    <value>154, 68</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 17</value>
+    <value>517, 24</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value> Manual” folder under the software decompression folder.</value>
+  </data>
+  <data name="labelWeb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 171</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Help Info of GeoSoS for ArcGIS</value>

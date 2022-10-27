@@ -16,14 +16,19 @@ namespace GeoSOS.ArcMapAddIn.UI.Forms
             InitializeComponent();
         }
 
-        private void linkLabelhelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void labelWeb_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.geosimulation.cn/geososforarcgis_usermanual.html");
         }
 
-        private void buttonOk_Click(object sender, EventArgs e)
+        private void labelWeb_MouseHover(object sender, EventArgs e)
         {
-            this.Close();
+            Cursor = Cursors.Hand;
         }
     }
 }

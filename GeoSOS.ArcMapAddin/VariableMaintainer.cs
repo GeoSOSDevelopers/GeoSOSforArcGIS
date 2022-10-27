@@ -270,6 +270,7 @@ namespace GeoSOS.ArcMapAddIn
         /// <returns></returns>
         public static string GetOutputFolder()
         {
+            //20211203 修正目录空间造成的执行错误
             string outputFolder = GetMxdDocumentFolder() + @"\Output Data";
             if (!System.IO.Directory.Exists(outputFolder))
                 System.IO.Directory.CreateDirectory(outputFolder);

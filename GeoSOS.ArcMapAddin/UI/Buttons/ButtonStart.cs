@@ -250,7 +250,7 @@ namespace GeoSOS.ArcMapAddIn
                     }
                     AreaOptimizationACO areaOptimizationACO = new AreaOptimizationACO();
                     areaOptimizationACO.Initialize(VariableMaintainer.CurrentStructACOParameters, 1, false,
-                        VariableMaintainer.CurrentDockableWindowOutput, VariableMaintainer.CurrentDockableWindowGraphy, true);
+                        VariableMaintainer.CurrentDockableWindowOutput, VariableMaintainer.CurrentDockableWindowGraphy, true, "ACOArea");
 
                     thread = new Thread(new ThreadStart(areaOptimizationACO.Run));
                 }

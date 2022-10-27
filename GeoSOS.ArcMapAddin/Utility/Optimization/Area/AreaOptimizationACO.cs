@@ -277,7 +277,7 @@ namespace GeoSOS.ArcMapAddIn.Utility.Optimization
 
         public void Initialize(StructACOParameters structACOParameters, int microSearchIterationCountValue, 
             Boolean isNeedSaveValue, DockableWindowOutput currentDockableWindowOutput, 
-            DockableWindowGraphy currentDockableWindowGraphy, Boolean isUseCompactnessValue)
+            DockableWindowGraphy currentDockableWindowGraphy, Boolean isUseCompactnessValue, string layerName)
         {
 
             q = structACOParameters.Q;                     //信息素强度
@@ -333,7 +333,7 @@ namespace GeoSOS.ArcMapAddIn.Utility.Optimization
             string simulationLayerName = VariableMaintainer.CurrentFoucsMap.get_Layer(0).Name;
             IRasterLayer simulationImageLayer = ArcGISOperator.GetRasterLayerByName(simulationLayerName);
             string dateTime = GeneralOpertor.GetDataTimeFullString(DateTime.Now);
-            string rasterName = "ACOArea" + dateTime + ".img";
+            string rasterName = layerName + dateTime + ".img";
             IRasterDataset rst = ArcGISOperator.CreateRasterDataset(VariableMaintainer.DefaultOutputFolder,
                 rasterName, simulationImageLayer, structRasterMetaData, occupiedStatus, 0);
             IRasterLayer n = new RasterLayerClass();
@@ -1049,7 +1049,16 @@ namespace GeoSOS.ArcMapAddIn.Utility.Optimization
             //Agents = ACO_Ant.BreakOrder(Agents);
             isNeedUpdate = false;
             while (this.currentIteration < totalItearationCount)
-                Step(arrayAnts);
+            {
+                try
+                {
+                    Step(arrayAnts);
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.Print(ex.Message);
+                }
+            }
             //ArcMap.Application.StatusBar.set_Message(0, VariableMaintainer.CurrentResourceManager.GetString("String170"));
             VariableMaintainer.CurrentDockableWindowOutput.AppendText(VariableMaintainer.CurrentResourceManager.GetString("String170") + goalUtilityInAllIterations + "\n");
             VariableMaintainer.CurrentDockableWindowOutput.AppendText("\n");
@@ -1147,7 +1156,7 @@ namespace GeoSOS.ArcMapAddIn.Utility.Optimization
             }
             //显示适宜性图层
             string dateTime = GeneralOpertor.GetDataTimeFullString(DateTime.Now);
-            string rasterName = "suitability" + dateTime + ".img";
+            string rasterName = "Suitability" + dateTime + ".img";
             ArcMap.Application.StatusBar.set_Message(0, VariableMaintainer.CurrentResourceManager.GetString("String169"));
             VariableMaintainer.CurrentDockableWindowOutput.AppendText(VariableMaintainer.CurrentResourceManager.GetString("String169") + rasterName + ".....\n");
             VariableMaintainer.CurrentDockableWindowOutput.AppendText("\n");
